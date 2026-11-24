@@ -11,10 +11,11 @@ defineEmits<{ choose: [] }>();
     :aria-pressed="active"
     @click="$emit('choose')"
   >
-    <span class="gate-symbol">{{ spec.symbol }}</span
-    ><span
-      ><strong>{{ spec.name }}</strong
-      ><small>{{ spec.kind }}</small></span
-    ><span class="tile-plus">＋</span>
+    <span class="gate-symbol">{{ spec.symbol }}</span>
+    <span>
+      <strong>{{ spec.name }}</strong>
+      <small>{{ spec.kind }}</small>
+    </span>
+    <span class="tile-plus">＋</span>
   </button>
 </template>
